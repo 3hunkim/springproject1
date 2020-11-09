@@ -1,0 +1,27 @@
+package com.sist.manager;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MovieManager {
+	public String jsonAllData(int type)
+	{
+		String url="http://www.kobis.or.kr/kobis/business/main/";
+		String json="";
+		switch(type)
+		{
+		case 1:
+			url:
+			break;
+			searchMainDailyBoxOffice.do
+				
+				searchMainRealTicket.do
+					
+					"searchMainDailySeatTicket.do",	
+					
+					"searchMainOnlineDailyBoxOffice.do",
+			
+		}
+		return json;
+	}
+}

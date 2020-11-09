@@ -1,0 +1,43 @@
+package com.sist.manager;
+
+import org.jsoup.Jsoup;
+import org.springframework.stereotype.Component;
+
+import com.sun.xml.txw2.Document;
+
+@Component
+public class MovieManager {
+	public static void main(String[] args) {
+		MovieManager m=new MovieManager();
+		String json=m.jsonAllData(1);
+		json=json.substring(json.indexOf("["),json.lastIndexOf("]")+1);
+		System.out.println(json);
+	}
+	public String jsonAllData(int type)
+	{
+		String url="http://www.kobis.or.kr/kobis/business/main/";
+		String json="";
+		switch(type)
+		{
+		case 1:
+			url+="searchMainDailyBoxOffice.do";
+			break;
+		case 2:
+			url+="searchMainRealTicket.do";
+			break;
+		case 3:
+			url+="searchMainDailySeatTicket.do";
+			break;
+		case 4:
+			url+="searchMainOnlineDailyBoxOffice.do";
+			break;
+		}
+		try
+		{
+			Document doc=Jsoup.connect(url).get();
+			json=doc.toString()
+					
+		}
+		return json;
+	}
+}

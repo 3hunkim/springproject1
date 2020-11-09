@@ -1,0 +1,14 @@
+package com.sist.web;
+
+import org.springframework.stereotype.Controller;
+
+// Model => JSP(HTML(태그형)+Java)
+// JSP(HTML(태그형)) => VIEW
+// JAVA => Model(1. VO, 2. DAO, 3. Manager)
+// Controller 스프링 안에서는 제작
+// => 작동 (메뉴얼 제작 => XML)
+// 이 클래스는 => Model 역할
+@Controller
+public class MovieController {
+	
+}

@@ -1,0 +1,17 @@
+package com.sist.manager;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MovieManager {
+	public String jsonAllData(int type)
+	{
+		String url="";
+		String json="";
+		switch(type)
+		{
+		
+		}
+		return json;
+	}
+}
